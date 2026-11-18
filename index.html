@@ -1,105 +1,194 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Agam Singh</title>
-  </head>
-  <body>
-    <div class="phone">
-      <div class="phone-header">
-        <div class="phone-header-camera"></div>
-        <div class="phone-header-description">
-          <div class="phone-header-left">
-            <i class="uil uil-angle-left"></i>
-            <img src="images/avatar.jpg" alt="" />
-            <div class="profile-name">
-              <p class="name">Samuel Green</p>
-              <p class="availability">Available to Walk</p>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+   <title>SBA3 app tailwind illustration</title>
+
+</head>
+
+<body class="min-h-screen overflow-hidden bg-[hsl(270,20%,96%)] font-['Rubik'] flex flex-col lg:flex-row items-center justify-center gap-12 px-5 py-6">
+
+  <!-- Background images -->
+
+  <div class="fixed top-0 left-0 w-1/2 lg:w-1/4 h-[400px] lg:h-[550px] bg-gradient-to-br from-[hsl(264,100%,61%)] 
+  to-[hsl(293,100%,63%)] rounded-br-[1000px] pointer-events-none -z-0"></div>
+
+  <div class="fixed bottom-0 right-0 w-1/2 lg:w-1/4 h-[400px] lg:h-[550px] bg-[hsl(0,14%,91%)] rounded-tl-[1000px] pointer-events-none -z-0"></div>
+
+
+  <!-- Phone -->
+
+  <div class="relative z-10 shrink-0 flex flex-col w-[270px] min-w-[270px] h-[540px] min-h-[540px] rounded-[24px] p-[12px] bg-white shadow-xl">
+
+    <!-- Phone Header -->
+
+    <div class="shrink-0 w-full h-[70px] rounded-t-[20px] rounded-b-[8px] bg-gradient-to-r from-[hsl(264,100%,61%)] to-[hsl(293,100%,63%)]">
+
+      <!-- Camera -->
+
+      <div class="w-[150px] h-[22px] mx-auto bg-white rounded-b-[30px]"></div>
+
+      <!-- Profile -->
+
+      <div class="w-full h-[48px] flex items-center justify-between text-white">
+
+        <div class="flex items-center justify-around w-[75%]">
+
+          <i class="uil uil-angle-left text-[22px]"></i>
+
+          <img src="images/avatar.jpg" alt="Samuel Green" class="w-[32px] h-[32px] rounded-full border border-white object-cover">
+
+          <div>
+            <p class="text-[13px]">Samuel Green</p>
+            <p class="text-[9px] text-gray-300">Available to Walk</p>
           </div>
 
-          <i class="uil uil-ellipsis-v"></i>
         </div>
-      </div>
-      <div class="phone-body">
-        <div class="message left">
-          <p>
-            That sounds great, I'd be <br />
-            happy to discuss more.
-          </p>
-        </div>
-        <div class="message left">
-          <p>
-            Could you send over some <br />
-            pictures of your dog please
-          </p>
-        </div>
-        <div class="pictures">
-          <img src="images/dog-image-1.jpg" alt="" />
-          <img src="images/dog-image-2.jpg" alt="" />
-          <img src="images/dog-image-3.jpg" alt="" />
-        </div>
-        <div class="message right">
-          <p>
-            Here are a few pictures. She's <br />
-            a happy girl!
-          </p>
-        </div>
-        <div class="message right">
-          <p>Can you make it?</p>
-        </div>
-        <div class="message left">
-          <p>
-            She looks so happy! The time <br />
-            we discussed works. How <br />
-            long shall I take her out for?
-          </p>
-        </div>
-        <div class="payment">
-          <div class="payment-left">
-            <i class="uil uil-circle"></i>
-            <p>30 minute walk</p>
-          </div>
 
-          <p class="amount">$29</p>
-        </div>
-        <div class="payment">
-          <div class="payment-left">
-            <i class="uil uil-circle"></i>
-            <p>1 hour walk</p>
-          </div>
-          <p class="amount">$49</p>
-        </div>
-        <div class="type-message">
-          <p>Type a message...</p>
-          <div class="send">
-            <i class="uil uil-angle-right"></i>
-          </div>
-        </div>
+        <i class="uil uil-ellipsis-v mr-[12px]"></i>
+
       </div>
     </div>
-    <div class="description">
-      <h1 class="description-head">Simple booking</h1>
-      <p class="description-text">
-        Stay in touch with our dog walkers through the chat interface. This
-        makes it easy to discuss arrangements and make bookings. Once the walk
-        has been completed you can rate your walker and book again all through
-        the chat.
-      </p>
+
+
+    <!-- Phone Body -->
+
+    <div class="flex-1 min-h-0 overflow-hidden rounded-b-[20px] bg-[hsl(270,20%,96%)]">
+
+      <!-- Left Message 1 -->
+
+      <div class="mt-[10px] ml-[12px] text-[10px]">
+        <p class="inline-block bg-[hsl(0,14%,91%)] text-[hsl(276,55%,52%)] rounded-[12px_12px_12px_5px] p-[9px]">
+          That sounds great, I'd be <br>
+          happy to discuss more.
+        </p>
+      </div>
+      <!-- Left Message 2 -->
+
+      <div class="mt-[9px] ml-[12px] text-[10px]">
+        <p class="inline-block bg-[hsl(0,14%,91%)] text-[hsl(276,55%,52%)] rounded-[12px_12px_12px_5px] p-[9px]">
+          Could you send over some <br>
+          pictures of your dog please
+        </p>
+      </div>
+
+      <!-- Dog Pictures -->
+
+      <div class="flex justify-end mt-[10px]">
+
+        <img src="images/dog-image-1.jpg" alt="Dog" class="w-[48px] h-[48px] object-cover mr-[8px] rounded-[10px]">
+
+        <img
+          src="images/dog-image-2.jpg"
+          alt="Dog"
+          class="w-[48px] h-[48px] object-cover mr-[8px] rounded-[10px]"
+        >
+
+        <img src="images/dog-image-3.jpg" alt="Dog" class="w-[48px] h-[48px] object-cover mr-[12px] rounded-[10px]">
+
+      </div>
+
+      <!-- Right Message 1 -->
+
+      <div class="flex justify-end mt-[9px] text-[10px]">
+        <p class="bg-white rounded-[12px_12px_5px_12px] p-[9px] mr-[12px]">
+          Here are a few pictures. She's <br>
+          a happy girl!
+        </p>
+      </div>
+
+      <!-- Right Message 2 -->
+
+      <div class="flex justify-end mt-[9px] text-[10px]">
+        <p class="bg-white rounded-[12px_12px_5px_12px] p-[9px] mr-[12px]">
+          Can you make it?
+        </p>
+      </div>
+
+      <!-- Left Message 3 -->
+
+      <div class="mt-[9px] ml-[12px] text-[10px]">
+        <p class="inline-block bg-[hsl(0,14%,91%)] text-[hsl(276,55%,52%)] rounded-[12px_12px_12px_5px] p-[9px]">
+          She looks so happy! The time <br>
+          we discussed works. How <br>
+          long shall I take her out for?
+        </p>
+      </div>
+
+      <!-- Payment Option 1 -->
+
+      <div class="flex items-center justify-between w-[175px] ml-[12px] mt-[9px] p-[9px] text-white bg-gradient-to-r from-[hsl(264,100%,61%)] to-[hsl(293,100%,63%)] rounded-[12px_12px_12px_5px]">
+
+        <div class="flex items-center">
+          <i class="uil uil-circle text-[hsl(270,20%,96%)] text-[16px]"></i>
+          <p class="text-[10px] ml-[7px]">30 minute walk</p>
+        </div>
+
+        <p class="text-[16px] font-bold">$29</p>
+
+      </div>
+
+      <!-- Payment Option 2 -->
+
+      <div class="flex items-center justify-between w-[175px] ml-[12px] mt-[9px] p-[9px] text-white bg-gradient-to-r from-[hsl(264,100%,61%)] to-[hsl(293,100%,63%)] rounded-[12px_12px_12px_5px]">
+
+        <div class="flex items-center">
+          <i class="uil uil-circle text-[hsl(270,20%,96%)] text-[16px]"></i>
+          <p class="text-[10px] ml-[7px]">1 hour walk</p>
+        </div>
+
+        <p class="text-[16px] font-bold">$49</p>
+
+      </div>
+
+      <!-- Message Input -->
+
+      <div class="mx-auto mt-[18px] mb-[10px] w-[92%] h-[42px] shrink-0 bg-white rounded-full flex items-center justify-between">
+
+        <p class="text-[11px] text-gray-300 ml-[15px]">
+          Type a message...
+        </p>
+
+        <div class="w-[32px] h-[32px] mr-[5px] rounded-full bg-[hsl(271,36%,24%)] flex items-center justify-center">
+          <i class="uil uil-angle-right text-white text-[22px]"></i>
+        </div>
+
+      </div>
+
     </div>
-    <div class="purpleBody"></div>
-    <div class="greybody"></div>
-  </body>
+  </div>
+
+
+  <!-- Description -->
+
+  <div class="relative z-10 w-full max-w-[400px]">
+
+    <h1 class="text-center lg:text-left text-[hsl(271,36%,24%)] text-[32px] font-medium mb-[20px]">
+      Simple booking
+    </h1>
+
+    <p class="text-center lg:text-left text-[hsl(270,7%,64%)] text-[15px] leading-[1.7]">
+      Stay in touch with our dog walkers through the chat interface. This
+      makes it easy to discuss arrangements and make bookings. Once the walk
+      has been completed you can rate your walker and book again all through
+      the chat.
+    </p>
+
+  </div>
+
+</body>
 </html>
